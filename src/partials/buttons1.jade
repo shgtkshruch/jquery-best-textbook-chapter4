@@ -1,0 +1,10 @@
+#buttons1
+  h2 BUTTONS1
+  .inner.clearfix
+    - buttons = ['Albatross', 'Bishop', 'Canary', 'Duck', 'Eagle', 'Falcon', 'Goose', 'Hawk', 'Ibis', 'Jaeger', 'Kingfisher', 'Lark']
+    each button, i in buttons
+      if i < 7
+        button= button
+      else
+        button= button
+          span.bg= button

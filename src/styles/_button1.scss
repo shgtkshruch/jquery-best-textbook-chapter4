@@ -1,0 +1,22 @@
+#buttons1 {
+  background-color: #ebc000;
+  .inner {
+    position: relative;
+    width: 976px;
+    margin: 0 auto;
+  }
+  button {
+    display: block;
+    float: left;
+    width: 224px;
+    height: 80px;
+    margin: 0 10px 20px;
+    padding: 0;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    color: #ebc000;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+  }
+}
