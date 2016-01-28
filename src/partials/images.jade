@@ -1,0 +1,8 @@
+#images
+  h2 IMAGES
+  .inner.clearfix
+    each text, i in ['Hummingbird', 'Sitta', 'Bee-eater']
+      p
+        img(src="images/#{i+1}_img.jpg" alt="")
+        strong= text
+        span
