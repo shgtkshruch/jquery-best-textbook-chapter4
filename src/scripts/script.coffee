@@ -37,3 +37,20 @@ $ '#buttons1 button:nth-child(n+5):nth-child(-n+8)'
         borderWidth: '0px'
         color: '#ebc000'
       , duration, 'easeOutSine'
+
+# 3行目
+$ '#buttons1 button:nth-child(n+9)'
+  .on 'mouseover', ->
+    $(@)
+      .find '> span'
+      .stop true
+      .animate
+        width: '100%'
+      , duration, 'easeOutQuad'
+  .on 'mouseout', ->
+    $(@)
+      .find '> span'
+      .stop true
+      .animate
+        width: '0px'
+      , duration, 'easeOutQuad'

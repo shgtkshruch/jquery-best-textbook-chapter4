@@ -6,6 +6,7 @@
     margin: 0 auto;
   }
   button {
+    position: relative;
     display: block;
     float: left;
     width: 224px;
@@ -18,5 +19,22 @@
     background-color: #fff;
     border: 0px solid rgba(174, 94, 155, 1);
     border-radius: 20px;
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      overflow: hidden;
+      span {
+        display: block;
+        width: 224px;
+        height: 80px;
+        line-height: 80px;
+        color: #fff;
+        background-color: #ae5e9b;
+        border-radius: 20px;
+      }
+    }
   }
 }

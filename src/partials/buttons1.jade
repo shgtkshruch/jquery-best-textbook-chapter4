@@ -3,8 +3,9 @@
   .inner.clearfix
     - buttons = ['Albatross', 'Bishop', 'Canary', 'Duck', 'Eagle', 'Falcon', 'Goose', 'Hawk', 'Ibis', 'Jaeger', 'Kingfisher', 'Lark']
     each button, i in buttons
-      if i < 7
+      if i < 8
         button= button
       else
         button= button
-          span.bg= button
+          span.bg
+            span= button
