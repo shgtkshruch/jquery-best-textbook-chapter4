@@ -111,3 +111,44 @@ $images
           opacity: 0
         , duration
 
+# 3枚目
+$images
+  .filter ':nth-child(3)'
+  .on 'mouseover', ->
+    $(@)
+      .find 'img'
+      .stop true
+      .animate
+        top: '-20px'
+      , duration * 1.3
+      .end()
+      .find 'strong'
+      .stop true
+      .animate
+        bottom: '0px'
+      , duration
+      .end()
+      .find 'span'
+      .stop true
+      .animate
+        opacity: 1
+      , duration
+  .on 'mouseout', ->
+    $(@)
+      .find 'img'
+      .stop true
+      .animate
+        top: '0px'
+      , duration
+      .end()
+      .find 'strong'
+      .stop true
+      .animate
+        bottom: '-80px'
+      , duration
+      .end()
+      .find 'span'
+      .stop true
+      .animate
+        opacity: 0
+      , duration

@@ -39,5 +39,15 @@
       opacity: 0;
       left: -200%;
     }
+    &:nth-child(3) {
+      strong {
+        bottom: -80px;
+        background: rgba(34, 34, 34, 1);
+      }
+      img {
+        position: absolute;
+        top: 0;
+      }
+    }
   }
 }
