@@ -78,3 +78,36 @@ $images
       .animate
         opacity: 0
       , duration
+
+# 2枚目
+$images
+  .filter ':nth-child(2)'
+  .on 'mouseover', ->
+    $(@)
+      .find 'strong'
+        .stop true
+        .animate
+          opacity: 1
+          left: '0%'
+        , duration
+      .end()
+      .find 'span'
+        .stop true
+        .animate
+          opacity: 1
+        , duration
+  .on 'mouseout', ->
+    $(@)
+      .find 'strong'
+        .stop true
+        .animate
+          opacity: 0
+          left: '-200%'
+        , duration
+      .end()
+      .find 'span'
+        .stop true
+        .animate
+          opacity: 0
+        , duration
+
