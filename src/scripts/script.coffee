@@ -54,3 +54,27 @@ $ '#buttons1 button:nth-child(n+9)'
       .animate
         width: '0px'
       , duration, 'easeOutQuad'
+
+###
+# IMAGES
+###
+
+$images = $ '#images p'
+
+# 1枚目
+$images
+  .filter ':nth-child(1)'
+  .on 'mouseover', ->
+    $(@)
+      .find 'strong, span'
+      .stop true
+      .animate
+        opacity: 1
+      , duration
+  .on 'mouseout', ->
+    $(@)
+      .find 'strong, span'
+      .stop true
+      .animate
+        opacity: 0
+      , duration
