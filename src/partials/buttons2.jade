@@ -1,0 +1,10 @@
+#buttons2
+  h2 BUTTONS2
+  .inner
+    each animal, i in ['ELEPHANT', 'GIRAFFE', 'WOLF', 'RHINOCEROS']
+      button
+        span
+          img(src="images/#{i+1}_gr.png" alt="")
+          img(src="images/#{i+1}_bl.png" alt="")
+          | #{animal}
+

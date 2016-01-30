@@ -56,6 +56,51 @@ $ '#buttons1 button:nth-child(n+9)'
       , duration, 'easeOutQuad'
 
 ###
+# BUTTONS2
+###
+
+$ '#buttons2 button'
+  .each (index) ->
+    pos = index * 40 - 40
+    $(@).css 'top', pos
+  .on 'mouseover', ->
+    $(@)
+      .stop true
+      .animate
+        backgroundColor: '#faee00'
+        color: '#000'
+      , duration
+      .find 'img:first-child'
+      .stop true
+      .animate
+        opacity: 0
+      , duration
+      .end()
+      .find 'img:nth-child(2)'
+      .stop true
+      .animate
+        opacity: 1
+      , duration
+  .on 'mouseout', ->
+    $(@)
+      .stop true
+      .animate
+        backgroundColor: '#fff'
+        color: '#01b169'
+      , duration
+      .find 'img:first-child'
+      .stop true
+      .animate
+        opacity: 1
+      , duration
+      .end()
+      .find 'img:nth-child(2)'
+      .stop true
+      .animate
+        opacity: 0
+      , duration
+
+###
 # IMAGES
 ###
 
