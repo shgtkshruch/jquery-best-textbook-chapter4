@@ -1,0 +1,38 @@
+#buttons2 {
+  background-color: #01b169;
+  height: 340px;
+  button {
+    display: block;
+    position: absolute;
+    width: 224px;
+    height: 224px;
+    overflow: hidden;
+    padding: 0 0 35px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #01b169;
+    background-color: #fff;
+    border: none;
+    border-radius: 112px;
+    &:nth-child(1) {
+      left: 10px;
+    }
+    &:nth-child(2) {
+      left: 254px;
+    }
+    &:nth-child(3) {
+      left: 498px;
+    }
+    &:nth-child(4) {
+      left: 742px;
+    }
+    img {
+      &:first-child {
+        position: absolute;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+    }
+  }
+}
