@@ -197,3 +197,32 @@ $images
       .animate
         opacity: 0
       , duration
+
+###
+# Sidebar
+###
+
+$aside = $ '.page-main > aside'
+$aside
+  .find 'button'
+  .on 'click', ->
+    $aside.toggleClass 'open'
+
+    if $aside.hasClass 'open'
+      $aside
+        .stop true
+        .animate
+          left: '-70px'
+        , duration, 'easeOutBack'
+      $(@)
+        .find 'img'
+        .attr 'src', 'images/btn_close.png'
+    else
+      $aside
+        .stop true
+        .animate
+          left: '-350px'
+        , duration, 'easeInBack'
+      $(@)
+        .find 'img'
+        .attr 'src', 'images/btn_open.png'
