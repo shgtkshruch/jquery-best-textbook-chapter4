@@ -226,3 +226,10 @@ $aside
       $(@)
         .find 'img'
         .attr 'src', 'images/btn_open.png'
+
+###
+# TYPO
+###
+
+$ '#typo'
+  .typoShadow()
